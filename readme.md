@@ -129,3 +129,14 @@ $ /opt/jdk8//bin/java \
 - it requires different amount of iterations until the issue happens
 - it usually happens within 5..50 iterations
 
+
+# Fix
+
+The cause was probably Chrome 58 or younger, after updating ot Chrome 59 the issue does no longer happen within 100 iterations (while it was reliably reproducable within 100 iterations).
+
+This setup works without issues so far:
+
+- Selenium client v3.3.1 or v3.4.0
+- Selenium server v3.4.0
+- ChromeDriver v2.29
+- Chrome 59
